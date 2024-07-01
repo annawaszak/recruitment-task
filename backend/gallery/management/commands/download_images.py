@@ -24,7 +24,7 @@ class Command(BaseCommand):
         
         url = 'https://thispersondoesnotexist.com'
 
-        for i in range(20):  # Download 20 images
+        for i in range(100):  # Download 100 images
             driver.get(url)
             sleep(2)  # Allow some time for the image to load
             image_element = driver.find_element(By.TAG_NAME, 'img')
