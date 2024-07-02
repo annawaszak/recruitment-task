@@ -21,7 +21,6 @@ def human_image(request, id):
 
 @csrf_exempt
 def set_gallery_image(request, index):
-
     if request.method == 'PUT':
         data = json.loads(request.body)
         image_id = data.get('id')
