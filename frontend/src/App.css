@@ -1,0 +1,56 @@
+/* frontend/src/App.css */
+
+.App {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.gallery img {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.pagination button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.pagination button:hover {
+  background-color: #45a049;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
